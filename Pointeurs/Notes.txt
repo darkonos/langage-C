@@ -1,0 +1,5 @@
+
+Quand on envoie une variable à une fonction, une copie de la variable est réalisée et ce n'est pas la même que celle de la fonction main. 
+
+Toutes les variables créées dans une fonction sont détruites à la fin de cette fonction.
+
