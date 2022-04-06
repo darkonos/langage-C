@@ -1,0 +1,62 @@
+ LES FICHIERS 
+--------------
+
+1.les principaux modes d'ouverture possibles :
+..........................................
+
+"r"  : lecture seule. Vous pourrez lire le contenu du fichier, mais pas y écrire. Le fichier doit avoir été créé au préalable.
+
+"w"  : écriture seule. Vous pourrez écrire dans le fichier, mais pas lire son contenu. Si le fichier n'existe pas, il sera créé.
+
+"a"  : mode d'ajout. Vous écrirez dans le fichier, en partant de la fin du fichier. Vous ajouterez donc du texte à la fin du fichier. 
+Si le fichier n'existe pas, il sera créé. Ce mode d'ajout peut être utile si vous voulez seulement ajouter des informations à la fin du fichier.
+
+"a+"  : ajout en lecture / écriture à la fin. Vous écrivez et lisez du texte à partir de la fin du fichier. Si le fichier n'existe pas, il sera créé.
+
+"r+"  : lecture et écriture. Vous pourrez lire et écrire dans le fichier. Le fichier doit avoir été créé au préalable.
+
+"w+"  : lecture et écriture, avec suppression du contenu au préalable. Le fichier est donc d'abord vidé de son contenu, vous pouvez y écrire, et le lire ensuite.
+ Si le fichier n'existe pas, il sera créé.  
+
+
+La fonction fopen() permet d’ouvrir un fichier. Il faut préciser en paramètre le chemin vers le fichier, et indiquer le mode d'ouverture
+ pour travailler sur le fichier selon votre besoin.
+
+ 2.ECRIRE DANS UN FICHIER
+ ......................
+
+-  fputc écrit un caractère dans le fichier (UN SEUL caractère à la fois)
+
+-  fputs écrit une chaîne dans le fichier.
+
+-  fprintf écrit une chaîne formatée dans le fichier. (le plus utilisé)
+
+ 3.LIRE DANS UN FICHIER
+ ....................
+
+- fgetc lit un caractère 
+- fgets lit une chaîne.
+- fscanf lit une chaîne "formatée".
+
+4.SE DEPLACER DANS UN FICHIER 
+............................
+
+Le système de curseur vous permet d'aller lire et écrire à une position précise dans le fichier.
+
+- ftell indique à quelle position vous êtes actuellement dans le fichier.
+
+- fseek positionne le curseur à un endroit précis.
+
+- rewind remet le curseur au début du fichier (c'est équivalent à demander à la fonction fseek de positionner le curseur au début).
+
+
+5. RENOMMER UN FICHIER 
+......................
+
+  rename("test.txt", "test_renomme.txt");
+
+6. SUPPRIMER UN FICHIER 
+.......................
+
+ remove("text.txt);
+

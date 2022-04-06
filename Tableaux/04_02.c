@@ -54,7 +54,7 @@ Declaration globale des variables
 */
 /***********Les lignes sont separees par une virgule************/
 
-// tableau initialise dans la main
+// tableau initialise dans le main
 char tableau0 [2][2];
 
 // tableau initialise ici mais attention seul l'element[0][0]

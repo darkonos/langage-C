@@ -96,7 +96,7 @@ int main(int argc, char *argv[])
 {
     int tableau[4] = {10, 15, 3};
  
-    // On affiche le contenu du tableau
+    // On envoi l'adresse et la taille du tableau
     affiche(tableau, 4);
  
     return 0;

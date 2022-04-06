@@ -1,15 +1,27 @@
 #include <stdio.h>
 
+float sumTab(float tab[], int taille);
+
 int main() {
 
-int i = 0;
-char tab[] = {"Hello world ! "};
+float tab[5]={10, 2, 3, 4, 12};
 
-    while(tab[i] != 0) {
-        printf("%c", tab[i]);
-        i++;
-    }
+
+    printf("%.2f \n", sumTab(tab, 5) );
 
 return 0;
 
+}
+
+float sumTab(float tab[], int taille){
+
+ float sum = 0;
+ for ( int i = 0; i < taille; i++)
+ {
+   
+    sum +=  tab[i] / taille;
+
+    
+ }
+     return sum;
 }
