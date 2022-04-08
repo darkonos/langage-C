@@ -1,0 +1,8 @@
+/***** LES PILES ET LES FILES *****/
+
+Les piles et les files sont deux variantes des listes chaînées qui permettent de contrôler 
+la manière dont sont ajoutés les nouveaux éléments.
+Ils sont très utiles pour des programmes qui doivent traiter des données qui arrivent au fur et à mesure.
+
+Les piles et les files permettent d'organiser en mémoire des données qui arrivent au fur et à mesure.
+Elles utilisent un système de liste chaînée pour assembler les éléments.

@@ -1,0 +1,47 @@
+/* ALLOCATION DYNAMIQUE */
+
+Quand on déclare une variable, on dit qu'on demande à allouer de la mémoire.
+
+Il y a 2 façon de créer une variable : automatiquement et manuellement.
+
+1. TROUVER LA TAILLE D'UNE VARIABLE EN FONCTION DE SON TYPE
+...........................................................
+
+On utlise l'opérateur sizeof()
+
+printf("int prend %d octets \n", sizeof(int));
+
+On peut afficher aussi la taille d'un type personnalisé qu'on a créé (une structure).
+Plus une structure contient de sous-variables, plus elle prend de mémoire. 
+
+2. ALLOUEZ MANUELLEMENT DE LA MEMOIRE AU SYSTEME
+................................................
+
+Inclure la bibliothèque <stdlib.h>
+
+- malloc() : demande au système d'exploitation la permission d'utiliser de la mémoire.
+- free()   : indique au système que l'on n'a plus besoin de la mémoire
+
+LES 3 ETAPES :
+
+- Appeler malloc() pour demander de la mémoire.
+- Vérifier la valeur retournée par malloc pour savoir si le système a bien réussi à allouer la mémoire.
+- Libérer la mémoire avec free une fois qu'on a fini d'utiliser la mémoire. 
+
+
+3. CREER UN TABLEAU DONT LA TAILLE N'EST CONNU QU'A L'EXECUTION
+................................................................
+
+Quand a-t-on besoin de l'allocation dynamique ?
+
+ - pour créer un tableau dont on ne connaît pas la taille avant l'exécution du programme.
+
+
+
+
+
+
+
+
+
+ 

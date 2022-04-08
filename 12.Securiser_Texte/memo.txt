@@ -1,0 +1,14 @@
+/* SECURISER LA SAISIE DE TEXTE */
+
+1. LES LIMITES DE LA FONCTION scanf()
+.....................................
+
+La fonction scanf s'arrête si elle tombe sur un espace, une tabulation ou une entrée.
+
+la fonction ne gère pas le buffer overflow
+
+2. RECUPERER UNE CHAINE DE CARACTERE
+....................................
+
+- fgets()  contrôle le nombre de caractères écrits en mémoire.
+
