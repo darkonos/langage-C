@@ -1,0 +1,64 @@
+/* LES BOUCLES */
+
+Définition : Ce sont des structures qui nous permettent de répéter une série d'instructions plusieurs fois.
+
+Boucle While 
+............
+
+Le programme répète un bloc d’instructions tant qu’une certaine condition est vraie.
+
+*On l'utilise quand on ne connait pas le nombre d'itération à effectuer.
+
+    while(condition)
+    {
+        //instructions
+    }
+
+Boucle for
+..........
+
+Au début de la boucle for, l’instruction d’initialisation i=0 est exécutée. La condition
+ d’arrêt est ensuite testée. Si la condition d’arrêt est vraie, les instructions dans
+le for sont exécutées, après quoi l’instruction de progression i=i+1 est exécutée.
+
+*On l'utilise quand on connait le nombre d'itération à effectuer. (utile pour les tableaux)
+
+    for(initialisation; condition; itération)
+    {
+        //instructions
+    }
+
+**Nota : Une variable déclaré au sein de l’instruction for, ne sera utilisable qu’au
+sein de cette boucle.
+
+Boucle do While
+...............
+
+La boucle while peut très bien ne jamais être exécutée si la condition est fausse dès le départ.
+la boucle do… while, c'est différent : le contenu de la boucle est toujours exécuté au moins une première fois.
+
+    do
+    {
+        //instructions
+
+    }while(condition);
+
+Boucle for imbriquée
+....................
+
+Une boucle for à l'intérieur d'une boucle for
+
+
+L’instruction  break  
+....................
+
+permet d'arrêter l’exécution d’une boucle, elle permet de sortir prématurément 
+de la boucle et de lancer l’instruction suivante.
+En cas de boucles imbriquées, break fait sortir de la boucle la plus interne. 
+De même si break apparaît dans un switch imbriqué dans une boucle, elle ne fait sortir que du switch.
+
+L’instruction  continue
+.......................
+
+ permet de passer directement à l’itération suivante sans exécuter les lignes
+ de l’itération courante.

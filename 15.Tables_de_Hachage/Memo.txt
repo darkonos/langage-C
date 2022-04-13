@@ -1,0 +1,50 @@
+/* TABLES DE HACHAGE */
+
+* Les tables de hachage ne font pas partie du langage C. Il s'agit simplement d'un concept.
+
+Les tables de hachage sont des tableaux. On y stocke des données à un emplacement déterminé
+ par une fonction de hachage.
+
+/* Intéret d'une table de hachage 
+.................................
+
+Le défaut des "listes chainées" est que, si on cherche à récupérer un élément précis de la liste, 
+il faut parcourir celle-ci en entier jusqu'à ce qu'on le retrouve !
+
+Le défaut des "tableaux" les cases sont identifiées par des indices. Il n'est pas valide en langage Ce
+ de demander à l'ordinateur : tableau["Luc Doncieux"] 
+
+* Imaginez que celui-ci se trouve à la fin d'une liste chaînée de 10 000 éléments ! Ce n'est pas
+ acceptable de devoir parcourir jusqu'à 10 000 éléments pour retrouver une information.
+
+Les listes chaînées sont plus flexibles et les tableaux, eux, permettent un accès plus rapide.
+Voila donc l'intéret des tables de hachage qui est un compromis entre les deux !
+
+
+EXEMPLE : imaginez un tableau dans lequel chaque case a un indice et possède un pointeur vers une structure de type Eleve.
+Si on veut retrouver la case correspondant à Luc Doncieux, il faut transformer son nom en indice du tableau, et donc associer 
+chaque nom à un numéro de case :
+
+Julien Lefebvre = 0 ;
+Aurélie Bassoli = 1 ;
+Yann Martinez = 2 ;
+Luc Doncieux = 3.
+
+/* Transformer une chaîne de caractères en numéro 
+.................................................
+
+Il faut écrire une fonction qui prend en entrée une chaîne de caractères, fait des calculs avec, puis retourne en sortie un 
+numéro correspondant à cette chaîne. Ce numéro sera l'indice de la case dans notre tableau.
+
+/* Ecrire une fonction de hachage 
+.................................
+
+Toute la difficulté consiste à transformer une chaîne de caractères en un nombre unique (indice).
+La fonction de hachage nous retourne un indice. Plus besoin de parcourir toutes les cases !
+
+
+
+
+
+
+

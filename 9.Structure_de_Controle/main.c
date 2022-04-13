@@ -3,8 +3,6 @@
 #include "fct.c"
 
 
-
-
 int main() {
 
  //Création d'une variable personne de type stuct Personne

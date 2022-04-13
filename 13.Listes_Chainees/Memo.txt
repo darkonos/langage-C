@@ -1,9 +1,16 @@
-/* Stockez les données avec les listes chaînées */
+/* LES LISTES CHAINEES  */
+
+Définition : Ensemble de structure liées entre elles par des pointeurs.
+
+ *Il n'existe pas en langage C de système de gestion de listes chaînées, il faut l'écrire nous-mêmes !
 
 Une liste chaînée est un moyen d'organiser une série de données en mémoire. 
 Cela consiste à assembler des structures en les liant entre elles à l'aide de pointeurs.
 
 Contrairement aux tableaux, les éléments d'une liste chaînée ne sont pas placés côte à côte dans la mémoire.
  Chaque case pointe vers une autre case en mémoire, qui n'est pas nécessairement stockée juste à côté.
+ Elles sont plus flexibles que les tableaux car on peut ajouter et supprimer des « cases » à n'importe quel moment.
+
+
 
  
