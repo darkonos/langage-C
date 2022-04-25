@@ -1,0 +1,47 @@
+/**** ALGORITHMIQUE ****/
+
+
+LA COMPLEXITE ALGORITHMIQUE
+...........................
+
+L'objectif premier d'un calcul de complexité algorithmique est de pouvoir comparer l’efficacité d’algorithmes résolvant le même problème. 
+Dans une situation donnée, cela permet donc d'établir lequel des algorithmes disponibles est le plus optimal.
+
+
+1. Complexité exponentielle
+---------------------------
+
+Plus il y a de chiffres dans le code, plus il sera long à trouver.
+
+Si le code a 3 chiffres, il faut tester 1000 combinaisons (eh oui, tous les nombres entre 000 et 999).
+ En revanche, s’il en a 4, il faut en tester 10 000. S’il en avait eu 5, il aurait fallu en tester 100 000, 
+ et ainsi de suite.
+10^N combinaisons
+
+2. Complexité linéaire
+----------------------
+10*N combinaisons
+
+3. Complexité en temps constant
+-------------------------------
+
+Quel que soit le nombre de chiffres, il prend toujours le même temps.
+
+4. Complexité spatiale
+----------------------
+
+Mesure de l'espace utilisé par un algorithme, en fonction de propriétés de ses entrées. L'espace compte le nombre maximum de cases 
+mémoire utilisées simultanément pendant un calcul.
+
+5. Complexité temporelle
+------------------------
+
+
+/*** LA RECURSIVITE ***/
+
+Fonction qui fait appelle à elle même.
+En programmation, il s’agit d’une fonction qui fait référence à elle-même. Deux fonctions peuvent s’appeler l’une l’autre, on parle
+alors de récursivité croisée.
+
+
+

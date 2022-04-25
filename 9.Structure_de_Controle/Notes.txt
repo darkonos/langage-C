@@ -1,5 +1,13 @@
 /* LES STRUCTURES */
 
+Il existe de multiples structures de données, les plus connues sont :
+
+- les tableaux, 
+- listes chaînées
+- dictionnaires (table de hachage) ;
+- piles et files ;
+- arbres binaires et graphs.
+
 Une structure est un type qui permet de stocker plusieurs données, de même type
 ou de types différents, dans une même variable de type structure. 
 

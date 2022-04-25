@@ -1,5 +1,5 @@
 /* Les tableaux sont une suite de variables de même type, stockées côte à côte en mémoire. 
-Un tableau de N éléments commence par le N° 0 et se termine par le numéro N -1 */
+Un tableau de N éléments commence par le N° 0 et se termine par le numéro N -1 (car le 0 est considéré comme une valeur) */
 
 /* 1.Définir un tableau */
 
