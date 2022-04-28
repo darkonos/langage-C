@@ -9,7 +9,10 @@ Il existe de multiples structures de données, les plus connues sont :
 - arbres binaires et graphs.
 
 Une structure est un type qui permet de stocker plusieurs données, de même type
-ou de types différents, dans une même variable de type structure. 
+ou de types différents, dans une même variable de type structure. Elle sert à représenter un objet réel ou un concept.
+Exemple : une voiture peut être représentée par les renseignements suivants :
+La marque, la couleur, l'année, etc...
+
 
 Nota : Nommez toujours les stucture en commencant par une majuscule !
 
@@ -23,7 +26,6 @@ struct Personne
     char nom[100];
     char prenom[100];
     char adresse[1000];
-    
     int age;
     int etudiant; // Booléen : 1 = etudiant, 0 = non etudiant
 };
