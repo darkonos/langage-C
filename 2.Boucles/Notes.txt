@@ -70,3 +70,26 @@ L’instruction  continue
  ..................
 
  A éviter !
+
+
+ Boucle infinie volontaire 
+ ..........................
+
+C’est le cas lorsqu’un micro-contrôleur lance le chargement d’un programme qui doit 
+continuer à s’exécuter tant que l’appareil périphérique est allumé.
+
+Avec l'instruction for :
+
+for(; ;)  
+{
+    instructions;
+}
+
+Avec l'instruction while :
+
+while(1)
+{
+    instructions;
+}
+
+Nota: On peut toujours sortir d'une boucle infinie avec break ! 
