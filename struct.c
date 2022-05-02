@@ -4,13 +4,13 @@
 
 /* PROTOTYPE DE FONCTION */
 
-int volumn(int a, int b, int c);
+long volumn(long a, long b, long c);
 
 /* DECLARATION DE STRUCTURE */
 
 struct Calcul {
 
-    char height[10];
+    char height[20];
     char width[10];
     char depth[10];
 }h, l, d;
@@ -20,7 +20,7 @@ int main(){
 
 
     printf("Please enter height : ");
-    fgets(h.height, 10, stdin);
+    fgets(h.height, 20, stdin);
     
     printf("Please enter width : ");
     fgets(l.width, 10, stdin);
@@ -31,9 +31,9 @@ int main(){
     /* Fonction atoi
 Cette fonction permet de transformer une chaîne de caractères, 
 représentant une valeur entière, en une valeur numérique de type int */
-    int valheight = atoi(h.height);
-    int valwidth = atoi(l.width);
-    int valdepth = atoi(d.depth);
+    long valheight = atoi(h.height);
+    long valwidth = atoi(l.width);
+    long valdepth = atoi(d.depth);
 
     printf("\nThe volumn is %i\n", volumn(valheight, valwidth, valdepth));
 
@@ -42,7 +42,7 @@ représentant une valeur entière, en une valeur numérique de type int */
 
 /* FONCTION */
 
-int volumn(int a, int b, int c)
+long volumn(long a, long b, long c)
 {
     return a*b*c;
 }
