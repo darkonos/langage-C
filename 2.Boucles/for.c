@@ -9,9 +9,14 @@ int cmpt = 0;
     {
         printf("%d ", cmpt);
         if(cmpt == 8)
-           continue;
+        {
+            printf("On a le %d  mais on continue !\n", cmpt);
+            continue;
+            
+        }
+           
     }
-
+     putchar('\n');
      printf(" Sortie du prog  car compteur vaut %d \n", cmpt);
 
 return 0;

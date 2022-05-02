@@ -1,0 +1,38 @@
+/* LES CONDITIONS */
+ -----------------
+En langage C, toute valeur différente de zéro est considérée comme vraie au niveau logique.
+
+if(evaluation ou bien le résultat d'une fonction){
+    instruction;
+}
+else {
+     instruction;
+}
+
+
+/* CONDITIONS MULTIPLES */
+ -----------------------
+
+switch(expression)
+{
+    case valeur1:
+        instruction(s);
+         break;
+    case valeur2:
+        instruction(s);
+         break;
+    case valeur3:
+        instruction(s);
+         break;
+    default:
+        instruction(s);
+}
+
+/* OPERATEUR CONDITIONNEL TERNIAIRE */
+ ------------------------------------
+
+    resultat = comparaison ? Si_vrai: si_faux;
+
+Exemple: 
+
+    resultat = (a > b) ? a : b; 

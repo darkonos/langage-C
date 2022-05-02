@@ -22,8 +22,9 @@ Au début de la boucle for, l’instruction d’initialisation i=0 est exécuté
 le for sont exécutées, après quoi l’instruction de progression i=i+1 est exécutée.
 
 *On l'utilise quand on connait le nombre d'itération à effectuer. (utile pour les tableaux)
+le nombre de compteurs, de déclarations ou de conditions n’est pas limité !
 
-    for(initialisation; condition; itération)
+    for(initialisation; condition_de_Sortie; itération)
     {
         //instructions
     }
@@ -43,10 +44,12 @@ la boucle do… while, c'est différent : le contenu de la boucle est toujours e
 
     }while(condition);
 
+
 Boucle for imbriquée
 ....................
 
 Une boucle for à l'intérieur d'une boucle for
+On peut parfaitement plaçer, par exemple, une boucle while dans une boucle for !
 
 
 L’instruction  break  
@@ -62,3 +65,8 @@ L’instruction  continue
 
  permet de passer directement à l’itération suivante sans exécuter les lignes
  de l’itération courante.
+
+ L'instruction goto
+ ..................
+
+ A éviter !

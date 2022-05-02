@@ -1,0 +1,19 @@
+/* Entrées et Sorties */
+
+Les entrées de données viennent par défaut du périphérique d’entrée standard stdin (clavier, modem, ou même un fichier situé sur un disque)
+Les sorties sont envoyées par défaut vers le périphérique de sortie standard stdout (Ecran, imprimante ou vers un fichier)
+
+- puts() : envoie un flux de textes vers le périphérique de sortie standard 
+- printf() signifie « print formatted » : envoie un flux de texte sur la sortie standard.
+- getchar() : permet d'obtenir un caractère depuis l'entrée standard. Ce n’est pas une fonction mais une macro, c’est-à-dire un symbole servant d’abréviation pour
+ une véritable fonction getc().
+- getc() permet de lire un caractère depuis l’entrée standard. ex: getc(stdin)
+- putchar() : sert à envoyer un caractère isolé vers la sortie standard.
+
+
+Stockage d’une chaîne en mémoire
+--------------------------------
+
+- scanf()
+- fgets()
+
