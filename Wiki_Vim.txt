@@ -1,0 +1,109 @@
+vimtutor: initiation à vim
+
+*Les modes d'édition de Vim
+
+- Mode interactif
+- Mode insertion: le message --INSERT-- 
+- Mode commande
+touche Echap : pour revenir au mode interactif.
+
+*Opérations basiques 
+
+-Déplacement:
+h : gauche
+j : bas
+k : haut
+l : droite
+
+0 et $ : se déplacer en début et fin de ligne
+w : de mot en mot
+gg : revenir à la première ligne
+G : sauter à la dernière ligne
+7G : sauter à la ligne N°7
+:w : enregistrer
+:q : quitter
+
+*Supprimer:
+
+x : effacer des lettres
+(nombre)x : supprime à partir du curseur
+dd : supprimer une ligne
+(nombre)dd : supprime le nombre de ligne
+dw : supprimer un mot
+d0 : supprime du curseur jusqu'au début de la ligne
+d$ : supprime du curseur jusqu'à la fin de la ligne
+
+*Copier
+
+yy : copie la ligne actuelle en mémoire
+yw : copier un mot
+y$ : copier du curseur jusqu'à la fin de la ligne
+(nombre)yy : copie le nombre de ligne
+
+*coller
+elle sera collée sur la ligne située après le curseur.
+
+p : colle le texte
+(nombre)p : colle le nombre de fois le texte
+r : remplacer une lettre
+rs : remplace une lettre par s
+u : annuler les modifications
+4u : annuler les quatre dernières modifications
+
+*Opérations avancées
+
+/ : rechercher un mot (n si + fois et N en arrière)
+
+- Rechercher et remplacer du texte
+:s/ancien/nouveau : remplace la première occurrence de la ligne où se trouve le curseur ;
+
+:s/ancien/nouveau/g : remplace toutes les occurrences de la ligne où se trouve le curseur ;
+
+:#,#s/ancien/nouveau/g : remplace toutes les occurrences dans les lignes n° # à # du fichier ;
+
+:%s/ancien/nouveau/g : remplace toutes les occurrences dans tout le fichier. C'est peut-être ce que vous utiliserez le plus fréquemment.
+
+- fusion de fichiers
+:r autrefichier : insérer un fichier à la position du curseur.
+
+- Le découpage d'écran (split)
+:sp : découper l'écran horizontalement
+:vsp : découper l'écran verticalement
+
+Les principaux raccourcis en écran splitté:
+
+Ctrl + wpuisCtrl + w : navigue de viewport en viewport. Répétez l'opération plusieurs fois pour accéder au viewport désiré.
+
+Ctrl + w puisj : déplace le curseur pour aller au viewport juste en dessous. La même chose fonctionne avec les touchesh,ketlque l'on utilise traditionnellement pour se déplacer dans Vim.
+
+Ctrl + w puis + : agrandit le viewport actuel.
+
+Ctrl + w puis - : réduit le viewport actuel.
+
+Ctrl + w puis = : égalise à nouveau la taille des viewports.
+
+Ctrl + w puis r : échange la position des viewports. Fonctionne aussi avec « R » majuscule pour échanger en sens inverse.
+
+Ctrl + w puis q : ferme le viewport actuel.
+
+
+ :! : lancer une commande externe
+
+
+* Les options de Vim
+fichier de configuration .vimrc
+copier dans /home/user le modele qui se trouve dans /etc/vim
+
+" : sont des commentaires
+syntax on: activer la coloration syntaxique
+set background=dark : coloration sur un fond sombre
+set number : afficher les numéros de ligne
+set showcmd : afficher la commande en cours
+set ignorecase : ignorer la casse lors de la recherche
+set mouse : activer le support de la souris
+
+
+
+
+
+
